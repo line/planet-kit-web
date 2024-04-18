@@ -1,11 +1,12 @@
 {
-  "name": "@linecorp/planet-kit",
+  "name": "@line/planet-kit",
   "version": "5.2.0",
   "description": "Planet client sdk for web developer",
   "main": "dist/planet-kit.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "planet-kit",
+    "line"
+  ],
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
@@ -15,5 +16,5 @@
     "url": "git+https://github.com/line/planet-kit-web.git"
   },
   "license": "(ISC OR MIT OR OFL-1.1)",
-  "homepage": "https://github.com/line/planet-kit-web#readme"
+  "homepage": "https://github.com/line/planet-kit-web"
 }
