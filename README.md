@@ -22,10 +22,10 @@ You can use WebPlanetKit SDK in your project by installing it through npm or yar
 
 ```
 # npm
-npm install @linecorp/planet-kit
+npm install @line/planet-kit
 
 # yarn
-yarn add @linecorp/planet-kit
+yarn add @line/planet-kit
 ```
 
 After installation, the method for importing the WebPlanetKit SDK into your project depends on your environment.
@@ -33,13 +33,13 @@ After installation, the method for importing the WebPlanetKit SDK into your proj
 - For real environment
 
 ```javascript
-import * as PlanetKit from "@linecorp/planet-kit";
+import * as PlanetKit from "@line/planet-kit";
 ```
 
 - For evaluation environment
 
 ```javascript
-import * as PlanetKit from "@linecorp/planet-kit/dist/planet-kit-eval";
+import * as PlanetKit from "@line/planet-kit/dist/planet-kit-eval";
 ```
 
 ### Including the SDK with a `<script>` tag
