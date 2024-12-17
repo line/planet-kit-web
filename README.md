@@ -8,7 +8,7 @@ LINE Planet is a cloud-based real-time communications platform as a service (CPa
 
 ## Projects
 
-- [planet-kit-web](https://github.com/line/planet-kit-web/tree/main/planet-kit): Main WebPlanetKit SDK.
+- [planet-kit-web](https://github.com/line/planet-kit-web/tree/main/planet-kit): WebPlanetKit SDK.
 - [planet-kit-virtual-background](https://github.com/line/planet-kit-web/tree/main/planet-kit-virtual-background): The virtual background plugin of WebPlanetKit.
 
 ## Installation
