@@ -1,0 +1,22 @@
+{
+  "name": "@line/planet-kit-virtual-background",
+  "version": "1.0.0",
+  "description": "Virtual background plugin for planet-kit SDK",
+  "main": "dist/planet-kit-virtual-background.js",
+  "keywords": [
+    "planet-kit",
+    "planet-kit-virtual-background",
+    "line"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/line/planet-kit-web.git",
+    "directory": "planet-kit-virtual-background"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/line/planet-kit-web"
+}

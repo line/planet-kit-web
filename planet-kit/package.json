@@ -5,6 +5,7 @@
   "main": "dist/planet-kit.js",
   "keywords": [
     "planet-kit",
+    "planet-kit-web",
     "line"
   ],
   "publishConfig": {
@@ -13,7 +14,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/line/planet-kit-web.git"
+    "url": "git+https://github.com/line/planet-kit-web.git",
+    "directory": "planet-kit"
   },
   "license": "(ISC OR MIT OR OFL-1.1)",
   "homepage": "https://github.com/line/planet-kit-web"
