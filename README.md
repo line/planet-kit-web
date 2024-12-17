@@ -6,6 +6,11 @@ LINE Planet is a cloud-based real-time communications platform as a service (CPa
 
 [Planet Documentation](https://docs.lineplanet.me/) provides additional resources to help you integrate LINE Planet into your service. These resources include LINE Planet specifications, developer guides for each client platform, and server API references.
 
+## Projects
+
+- [planet-kit-web](https://github.com/line/planet-kit-web/tree/main/planet-kit): Main WebPlanetKit SDK.
+- [planet-kit-virtual-background](https://github.com/line/planet-kit-web/tree/main/planet-kit-virtual-background): The virtual background plugin of WebPlanetKit.
+
 ## Installation
 
 ### Requirements
@@ -74,7 +79,7 @@ For detailed information on APIs, please refer to the following documents.
 
 ## Issues and Inquiries
 
-Please file any issues or inquiries you have to our representative or dl_planet_help@linecorp.com
+Please file any issues or inquiries you have to our representative or dl_planet_help@linecorp.com.
 Your opinions are always welcome.
 
 ## FAQ
