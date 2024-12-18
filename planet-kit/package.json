@@ -1,10 +1,11 @@
 {
   "name": "@line/planet-kit",
-  "version": "5.2.1",
+  "version": "5.3.0",
   "description": "Planet client sdk for web developer",
   "main": "dist/planet-kit.js",
   "keywords": [
     "planet-kit",
+    "planet-kit-web",
     "line"
   ],
   "publishConfig": {
@@ -13,7 +14,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/line/planet-kit-web.git"
+    "url": "git+https://github.com/line/planet-kit-web.git",
+    "directory": "planet-kit"
   },
   "license": "(ISC OR MIT OR OFL-1.1)",
   "homepage": "https://github.com/line/planet-kit-web"
