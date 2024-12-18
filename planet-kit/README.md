@@ -70,7 +70,7 @@ After including the SDK, you can use it in your Javascript code as follows.
 
 For detailed information on APIs, please refer to the following documents.
 
-[API Reference](https://docs.lineplanet.me/api-reference/client/web/5.2/index.html)
+[API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html)
 
 ## Issues and Inquiries
 

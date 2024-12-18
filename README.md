@@ -8,8 +8,8 @@ LINE Planet is a cloud-based real-time communications platform as a service (CPa
 
 ## Projects
 
-- [planet-kit-web](https://github.com/line/planet-kit-web/tree/main/planet-kit): WebPlanetKit SDK.
-- [planet-kit-virtual-background](https://github.com/line/planet-kit-web/tree/main/planet-kit-virtual-background): The virtual background plugin of WebPlanetKit.
+- [planet-kit-web](planet-kit/): WebPlanetKit SDK.
+- [planet-kit-virtual-background](planet-kit-virtual-background/): The virtual background plugin of WebPlanetKit.
 
 ## Installation
 
@@ -75,7 +75,7 @@ After including the SDK, you can use it in your Javascript code as follows.
 
 For detailed information on APIs, please refer to the following documents.
 
-[API Reference](https://docs.lineplanet.me/api-reference/client/web/5.2/index.html)
+[API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html)
 
 ## Issues and Inquiries
 

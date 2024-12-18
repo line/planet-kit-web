@@ -5,6 +5,7 @@
   "main": "dist/planet-kit-virtual-background.js",
   "keywords": [
     "planet-kit",
+    "planet-kit-web",
     "planet-kit-virtual-background",
     "line"
   ],

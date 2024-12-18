@@ -1,4 +1,4 @@
-# virtual-background for planet-kit-web
+# planet-kit-virtual-background
 
 `planet-kit-virtual-background` is the virtual background plugin of [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit).
 The virtual background feature applies effects to the background of the video stream by detecting and segmenting the person from the background.
@@ -19,8 +19,8 @@ The virtual background feature applies effects to the background of the video st
 
 ### Installing via NPM
 
-You can use planet-kit-virtual-background SDK in your project by installing it through npm or yarn.
-Install the planet-kit-virtual-background in the project where WebPlanetKit is installed.
+You can use `planet-kit-virtual-background` SDK in your project by installing it through npm or yarn.
+Install the `planet-kit-virtual-background` in the project where WebPlanetKit is installed.
 
 ```
 # npm
@@ -30,7 +30,7 @@ npm install @line/planet-kit-virtual-background
 yarn add @line/planet-kit-virtual-background
 ```
 
-After installation, import the planet-kit-virtual-background SDK into your project.
+After installation, import the `planet-kit-virtual-background` SDK into your project.
 
 ```javascript
 import PlanetKitVirtualBackground from "@line/planet-kit-virtual-background";
@@ -38,9 +38,9 @@ import PlanetKitVirtualBackground from "@line/planet-kit-virtual-background";
 
 ### Including the SDK with a `<script>` tag
 
-Alternatively, you can directly include the planet-kit-virtual-background SDK in your code using a `<script>` tag. The SDK can be obtained from the `dist` directory in this Git repository.
+Alternatively, you can directly include the `planet-kit-virtual-background` SDK in your code using a `<script>` tag. The SDK can be obtained from the `dist` directory in this Git repository.
 
-After downloading the SDK, integrate the planet-kit-virtual-background SDK into your project.
+After downloading the SDK, integrate the `planet-kit-virtual-background` SDK into your project.
 
 ```javascript
 <script type="text/javascript" src="path/to/js/planet-kit-virtual-background.js"></script>
@@ -50,7 +50,7 @@ After downloading the SDK, integrate the planet-kit-virtual-background SDK into 
 
 ### Set up with `planet-kit`
 
-After registering the planet-kit-virtual-background with planet-kit, you can use the virtual background feature. For more virtual background APIs, see the [API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html).
+After registering the `planet-kit-virtual-background` with planet-kit, you can use the virtual background feature. For more virtual background APIs, see the [API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html).
 
 ```javascript
 // Import SDK
@@ -74,7 +74,7 @@ planetKit.joinConference(conferenceParams).then(() => {
 
 The `MediaStreamManager` of planet-kit is the class to make it easy to create and manage a `MediaStream` using media devices.
 
-You can register planet-kit-virtual-background with `MediaStreamManager`, and what is reflected in `MediaStreamManager` can be used in the planet-kit instance.
+You can register `planet-kit-virtual-background` with `MediaStreamManager`, and what is reflected in `MediaStreamManager` can be used in the planet-kit instance.
 
 ```javascript
 // Import SDK
