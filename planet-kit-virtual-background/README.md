@@ -1,4 +1,4 @@
-# planet-kit-virtual-background
+# virtual-background for planet-kit-web
 
 `planet-kit-virtual-background` is the virtual background plugin of [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit).
 The virtual background feature applies effects to the background of the video stream by detecting and segmenting the person from the background.
@@ -9,18 +9,14 @@ The virtual background feature applies effects to the background of the video st
 
 ### Requirements
 
-- Node
-- npm or yarn
-- [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit) version >= 5.3
-- Supported browser
-  - Chromium 72+ based browser
-- Limitations
-  - Virtual background is only supported in Chrome browsers.
+-   Node
+-   npm or yarn
+-   [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit) version >= 5.3
 
 ### Installing via NPM
 
-You can use `planet-kit-virtual-background` SDK in your project by installing it through npm or yarn.
-Install the `planet-kit-virtual-background` in the project where WebPlanetKit is installed.
+You can use planet-kit-virtual-background SDK in your project by installing it through npm or yarn.
+Install the planet-kit-virtual-background in the project where WebPlanetKit is installed.
 
 ```
 # npm
@@ -30,17 +26,17 @@ npm install @line/planet-kit-virtual-background
 yarn add @line/planet-kit-virtual-background
 ```
 
-After installation, import the `planet-kit-virtual-background` SDK into your project.
+After installation, import the planet-kit-virtual-background SDK into your project.
 
 ```javascript
-import PlanetKitVirtualBackground from "@line/planet-kit-virtual-background";
+import PlanetKitVirtualBackground from '@line/planet-kit-virtual-background';
 ```
 
 ### Including the SDK with a `<script>` tag
 
-Alternatively, you can directly include the `planet-kit-virtual-background` SDK in your code using a `<script>` tag. The SDK can be obtained from the `dist` directory in this Git repository.
+Alternatively, you can directly include the planet-kit-virtual-background SDK in your code using a `<script>` tag. The SDK can be obtained from the `dist` directory in this Git repository.
 
-After downloading the SDK, integrate the `planet-kit-virtual-background` SDK into your project.
+After downloading the SDK, integrate the planet-kit-virtual-background SDK into your project.
 
 ```javascript
 <script type="text/javascript" src="path/to/js/planet-kit-virtual-background.js"></script>
@@ -50,7 +46,7 @@ After downloading the SDK, integrate the `planet-kit-virtual-background` SDK int
 
 ### Set up with `planet-kit`
 
-After registering the `planet-kit-virtual-background` with planet-kit, you can use the virtual background feature. For more virtual background APIs, see the [API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html).
+After registering the planet-kit-virtual-background with planet-kit, you can use the virtual background feature. For more virtual background APIs, see the [API Reference](https://docs.lineplanet.me/api-reference/client/web/5.3/index.html).
 
 ```javascript
 // Import SDK
@@ -74,7 +70,7 @@ planetKit.joinConference(conferenceParams).then(() => {
 
 The `MediaStreamManager` of planet-kit is the class to make it easy to create and manage a `MediaStream` using media devices.
 
-You can register `planet-kit-virtual-background` with `MediaStreamManager`, and what is reflected in `MediaStreamManager` can be used in the planet-kit instance.
+You can register planet-kit-virtual-background with `MediaStreamManager`, and what is reflected in `MediaStreamManager` can be used in the planet-kit instance.
 
 ```javascript
 // Import SDK
@@ -97,6 +93,48 @@ const conferenceParams = {
 };
 planetKit.joinConference(conferenceParams);
 ```
+
+## How to check initialization status
+
+`planet-kit-virtual-background` loads ML model files (including WASM binaries) during initialization, which may take time. You can check the initialization status using two simple APIs:
+
+### Wait for initialization to complete
+
+```javascript
+const virtualBackground = new PlanetKitVirtualBackground();
+
+try {
+    await virtualBackground.waitForVirtualBackgroundInitialization();
+    console.log('Virtual background is ready');
+} catch (error) {
+    console.error('Initialization failed:', error);
+}
+```
+
+### Check if ready synchronously
+
+```javascript
+const virtualBackground = new PlanetKitVirtualBackground();
+
+// Check if initialization is complete
+if (virtualBackground.isVirtualBackgroundReady()) {
+    // Ready to use
+} else {
+    // Still loading or failed
+}
+```
+
+> [!NOTE]
+>
+> The `startVirtualBackgroundBlur()` and `startVirtualBackgroundImage()` methods automatically handle initialization. You can call these methods immediately after creating the instance:
+>
+> ```javascript
+> const virtualBackground = new PlanetKitVirtualBackground();
+>
+> // This is safe to call immediately
+> // The virtual background will start automatically once initialization is complete
+> virtualBackground.startVirtualBackgroundBlur(video, canvas, 15);
+> ```
 
 ## How to set up virtual background ML model files
 
@@ -121,7 +159,7 @@ Alternatively, you can set up the ML model files by downloading them and hosting
 
 Download ML model files using the script in this repository based on your operating system.
 
-- For macOS or Unix-like system users:
+-   For macOS or Unix-like system users:
 
 Use the shell script `download_ml_model.sh`. Open a terminal and run the script.
 
@@ -130,7 +168,7 @@ Use the shell script `download_ml_model.sh`. Open a terminal and run the script.
 $ ./download_ml_model.sh {path}
 ```
 
-- For Windows users:
+-   For Windows users:
 
 Use the PowerShell script `download_ml_model.ps1`. Open PowerShell and run the script.
 
@@ -143,7 +181,7 @@ $ ./download_ml_model.ps1 {path}
 
 ```javascript
 // Create planet-kit-virtual-background instance with the locateFile config.
-const virtualBackground = new PlanetKitVirtualBackground({ locateFile: "/{path}" });
+const virtualBackground = new PlanetKitVirtualBackground({ locateFile: '/{path}' });
 ```
 
 Then, the ML model files in path are used at runtime.
