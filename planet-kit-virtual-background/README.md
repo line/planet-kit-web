@@ -11,7 +11,14 @@ The virtual background feature applies effects to the background of the video st
 
 -   Node
 -   npm or yarn
--   [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit) version >= 5.3
+-   [WebPlanetKit](https://www.npmjs.com/package/@line/planet-kit)
+
+    Use the plugin version that matches your WebPlanetKit version:
+
+    | WebPlanetKit  | planet-kit-virtual-background |
+    | ------------- | ----------------------------- |
+    | >= 6.0        | ^2.0.0                        |
+    | >= 5.3, < 6.0 | ^1.2.0                        |
 
 ### Installing via NPM
 
@@ -104,7 +111,7 @@ planetKit.joinConference(conferenceParams);
 const virtualBackground = new PlanetKitVirtualBackground();
 
 try {
-    await virtualBackground.waitForVirtualBackgroundInitialization();
+    await virtualBackground.waitForVirtualBackgroundReady();
     console.log('Virtual background is ready');
 } catch (error) {
     console.error('Initialization failed:', error);

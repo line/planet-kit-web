@@ -1,6 +1,6 @@
 {
   "name": "@line/planet-kit-virtual-background",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Virtual background plugin for planet-kit SDK",
   "main": "dist/planet-kit-virtual-background.js",
   "keywords": [

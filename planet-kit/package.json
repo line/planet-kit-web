@@ -1,6 +1,6 @@
 {
   "name": "@line/planet-kit",
-  "version": "5.6.0",
+  "version": "6.0.0",
   "description": "Planet client sdk for web developer",
   "main": "dist/planet-kit.js",
   "keywords": [
